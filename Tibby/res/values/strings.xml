@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">awesome</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="hello_world">hello, tibby!</string>
     <string name="action_settings">Settings</string>
+    <string name="snoopy">snoopy</string>
 
 </resources>
