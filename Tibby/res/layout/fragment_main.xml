@@ -7,21 +7,25 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.tibby.awesome.MainActivity$PlaceholderFragment" >
+    
 
-    <TextView
+"
+<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/snoopy"
+        android:src="@drawable/snoopy" />
+<ScrollView
+    android:id="@+id/ScrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:layout_below="@id/imageView1">
+    
+<TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
-
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_toRightOf="@id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:contentDescription="@string/snoopy"
-        android:src="@drawable/snoopy" />
-
+ </ScrollView>
 </RelativeLayout>

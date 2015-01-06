@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">awesome</string>
-    <string name="hello_world">hello, tibby!</string>
+    <string name="app_name">Snoopy</string>
+    <string name="hello_world"> Snoopy cannot talk, but his thoughts are shown in thought balloons.In the animated Peanuts films and television specials, Snoopy\'s thoughts are not verbalized, his moods are instead conveyed through growls, sobs, laughter, and monosyllabic utterances such as \&quot;bleah,\&quot; \&quot;hey,\&quot; etc. as well as through pantomime.Schulz summed up Snoopy\'s character in a 1997 interview\: \&quot;He has to retreat into his fanciful world in order to survive. Otherwise, he leads kind of a dull, miserable life. I don\'t envy dogs the lives they have to live.\&quot; Snoopy has imagined himself in different roles, such as a pelican, a vulture, and a World War One flying ace. Snoopy\'s fantasy roles are essentially the same, with Snoopy performing the respective role for each one, and always failing(such as his extremely short \&quot;novels\&quot; are never being published, and he can never be a convincing vulture, bear, or penguin, even to himself</string>
     <string name="action_settings">Settings</string>
     <string name="snoopy">snoopy</string>
 
