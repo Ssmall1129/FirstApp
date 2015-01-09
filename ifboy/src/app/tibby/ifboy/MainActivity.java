@@ -3,9 +3,11 @@ package app.tibby.ifboy;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -31,12 +33,24 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-        MediaPlayer ifboy = MediaPlayer.create(this, R.raw.ifboy);
-        ifboy.start();
+        
+        //ifboy.start();
     }
     
+    protected void onResume()
+    {
+    	Log.e("banana", "onResume");
+    	ifboy = MediaPlayer.create(this, R.raw.ifboy);
+    	ifboy.start();
+    	super.onResume();
+    }
     
-
+    protected void onPause()
+    {
+    	Log.e("banana", "onPause");
+    	ifboy.stop();
+    	super.onPause();
+    }
     
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,24 +75,27 @@ public class MainActivity extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-       
-        }   
+    public static class PlaceholderFragment extends Fragment 
+    {
+        public PlaceholderFragment() {}   
         private Button mybutton;
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
+                Bundle savedInstanceState) 
+        {
             final View rootView = inflater.inflate(R.layout.fragment_main, container, false);
             mybutton = (Button) rootView.findViewById(R.id.button1);
-            mybutton.setOnClickListener(new OnClickListener() {
-				public void onClick(View v) {
+            mybutton.setOnClickListener(new OnClickListener() 
+            {
+				public void onClick(View v) 
+				{
 					String url = "www.baidu.com";
 					Intent i = new Intent(Intent.ACTION_VIEW);
 					i.setData(Uri.parse(url));
-					//getActivity().startActivity(i);
-					//startActivity(i);
+					i.setClassName("com.android.browser", "com.android.browser.BrowserActivity");
+					//i.setClass(getActivity(), new Activity().getClass());
+					//getActivity();
+					startActivity(i);
 				}
 			});
             return rootView;

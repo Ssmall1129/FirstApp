@@ -2,9 +2,10 @@
 <resources>
 
     <string name="app_name">ifboy</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="ifaboy">If I were a boy\nIf you thought I would wait for you\nYou thought wrong\n\nBut your just a boy\nYou don’t understand (and you don’t understand)\nHow it feels to love a girl\nSomeday you’ll wish you were a better man\nYou don’t listen to her\nYou don’t care how it hurts\nUntil you lose the one you \nCause you taken her for granted\nAnd everything that you had got destroyed\nBut your just a boy…</string>
     <string name="action_settings">Settings</string>
     <string name="show_gem">show GEM</string>
     <string name="showgem">showGEM</string>
+    <string name="cover">cover</string>
 
 </resources>
