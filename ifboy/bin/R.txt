@@ -243,7 +243,7 @@ int id action_settings 0x7f060041
 int id activity_chooser_view_content 0x7f060025
 int id always 0x7f06000b
 int id beginning 0x7f060011
-int id button1 0x7f06003f
+int id button1 0x7f06003e
 int id checkbox 0x7f06002d
 int id collapseActionView 0x7f06000d
 int id container 0x7f06003c
@@ -270,7 +270,7 @@ int id normal 0x7f060000
 int id progress_circular 0x7f060018
 int id progress_horizontal 0x7f060019
 int id radio 0x7f06002f
-int id scroll 0x7f06003e
+int id scroll 0x7f06003f
 int id search_badge 0x7f060032
 int id search_bar 0x7f060031
 int id search_button 0x7f060033
@@ -475,6 +475,7 @@ int style Widget_AppCompat_PopupMenu 0x7f0c002b
 int style Widget_AppCompat_ProgressBar 0x7f0c000a
 int style Widget_AppCompat_ProgressBar_Horizontal 0x7f0c0009
 int style Widget_AppCompat_Spinner_DropDown_ActionBar 0x7f0c0022
+int style snoopy 0x7f0c0085
 int[] styleable ActionBar { 0x7f010021, 0x7f010022, 0x7f010023, 0x7f010024, 0x7f010025, 0x7f010026, 0x7f010027, 0x7f010028, 0x7f010029, 0x7f01002a, 0x7f01002b, 0x7f01002c, 0x7f01002d, 0x7f01002e, 0x7f01002f, 0x7f010030, 0x7f010031, 0x7f010032, 0x7f010033 }
 int styleable ActionBar_background 10
 int styleable ActionBar_backgroundSplit 12
