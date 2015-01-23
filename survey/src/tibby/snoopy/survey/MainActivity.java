@@ -6,6 +6,8 @@ import tibby.snoopy.survey.R.string;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
+import android.R.anim;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -13,6 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -94,10 +98,12 @@ public class MainActivity extends ActionBarActivity {
 						v.setVisibility(View.INVISIBLE);
 						String welcome = "thank you " + username;
 						Toast.makeText(v.getContext(), welcome,Toast.LENGTH_LONG).show();
+						Animation myanim = AnimationUtils.makeOutAnimation(v.getContext(), true);
+						v.startAnimation(myanim);
 					}
 				}
 	        };
-	        surveyB.setOnClickListener(listener0);
+	        surveyB.setOnClickListener(listener0);	        
 			return rootView;
 		}
 		
